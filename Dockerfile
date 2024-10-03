@@ -13,8 +13,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN deno install -A -r https://cli.fluentci.io -n fluentci
 
-RUN fluentci run --wasm buildx setup
-
 RUN fluentci run --wasm kamal install
 
 CMD ["fluentci"]
