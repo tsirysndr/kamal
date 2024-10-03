@@ -15,6 +15,6 @@ RUN deno install -A -r https://cli.fluentci.io -n fluentci
 
 ENV KAMAL_VERSION=1.9.0
 
-RUN fluentci run --wasm kamal install
+RUN fluentci run --wasm kamal version
 
 CMD ["fluentci"]
