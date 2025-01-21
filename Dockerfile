@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     libncursesw6 \
     build-essential
 
-RUN deno install -A -r https://cli.fluentci.io -n fluentci
+RUN deno install -A -r -g https://cli.fluentci.io -n fluentci
 
 WORKDIR /app
 
