@@ -9,7 +9,12 @@ RUN apt-get update && apt-get install -y \
     git \
     unzip \
     libncursesw6 \
-    build-essential
+    build-essential \
+    libc-dev \
+    libstdc++-11-dev \
+    libgcc-11-dev \
+    netbase \
+    libudev-dev
 
 RUN deno install -A -r -g https://cli.fluentci.io -n fluentci
 
