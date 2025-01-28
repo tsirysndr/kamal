@@ -1,4 +1,4 @@
-FROM denoland/deno:debian-2.1.6
+FROM denoland/deno:ubuntu-2.1.6
 
 RUN apt-get update && apt-get install -y \
     curl \
