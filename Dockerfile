@@ -1,4 +1,5 @@
-FROM denoland/deno:ubuntu-2.1.6
+FROM ubuntu:latest
+COPY --from=denoland/deno:bin-2.1.7 /deno /usr/local/bin/deno
 
 RUN apt-get update && apt-get install -y \
     curl \
