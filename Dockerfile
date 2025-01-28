@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 COPY --from=denoland/deno:bin-2.1.7 /deno /usr/local/bin/deno
 
+ENV PATH="/root/.deno/bin:${PATH}"
+
 RUN apt-get update && apt-get install -y \
     curl \
     tar \
